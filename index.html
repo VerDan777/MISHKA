@@ -11,7 +11,11 @@
   <header class="site-header">
     <nav class="main-nav">
       <div class="wrapper">
-        <div class="logo"><img class="logo__img" src="./img/mishka-logo.png" alt="logo"/></div>
+        <div class="logo">
+          <picture>
+            <source srcset="./img/mishka-logo-black.png 700w" media="(min-width: 700px)"/><img class="logo__img" src="./img/mishka-logo.png" alt="logo"/>
+          </picture>
+        </div>
         <div class="main-nav__menu-icon"><img src="./img/menu.png" alt="menu"/></div>
         <div class="main-menu">
           <ul class="main-menu__list">
@@ -25,8 +29,12 @@
     </nav>
     <div class="hero">
       <div class="wrapper"> 
-        <div class="hero__img"><img src="./img/hero.png" alt="hero"/></div>
-        <h1 class="hero__title">Милые штуки ручной работы для дома</h1>
+        <div class="hero__img">
+          <picture>
+            <source srcset="./img/hero-tablet.png 700w" media="(min-width: 700px)"/><img src="./img/hero.png" alt="hero"/>
+          </picture>
+        </div>
+        <h1 class="hero__title">Милые штуки<br>ручной работы для дома</h1>
         <ul class="hero__list">
           <li class="hero__item hero__item--green"><a href="catalog.html">Предметы интерьера</a><img src="./img/interior.png"/></li>
           <li class="hero__item"> <a href="catalog.html">Детские игрушки</a><img src="./img/toy-svg.png"/></li>
