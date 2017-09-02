@@ -419,6 +419,10 @@ h1, h2, h3, h4, h5, h6 {
       .section__title {
         font-size: 2rem;
         margin-bottom: 50px; } }
+    @media (min-width: 1200px) {
+      .section__title {
+        font-size: 3rem;
+        text-align: left; } }
   .section__subtitle {
     margin: 10px 0;
     font-family: 'OpenSans', sans-serif;
@@ -448,6 +452,9 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 700px) {
     .wrapper--about {
       text-align: center; } }
+  @media (min-width: 1200px) {
+    .wrapper--about {
+      text-align: left; } }
   .wrapper--review {
     text-align: center; }
     @media (min-width: 700px) {
@@ -502,6 +509,10 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 700px) {
     .main-menu__item {
       display: inline-block; } }
+
+.main-menu__catalog {
+  position: absolute;
+  top: 0; }
 
 .main-menu__link {
   color: black;
@@ -592,11 +603,15 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: none;
     border: none; }
   .table--info tr {
-    display: block;
+    display: inline-block;
     float: left; }
     @media (min-width: 700px) {
       .table--info tr {
         width: 50%; } }
+    @media (min-width: 1200px) {
+      .table--info tr {
+        width: 500px;
+        display: block; } }
   .table--info td {
     border-bottom: none; }
   .table--info__underline {
@@ -757,6 +772,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 400px;
   width: 100%;
   margin: 50px 0; }
+  @media (min-width: 1200px) {
+    #map {
+      width: 50%;
+      display: inline-block; } }
 
 .contacts {
   padding: 0 0; }
@@ -769,6 +788,10 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         right: 0;
         display: block; } }
+    @media (min-width: 1200px) {
+      .contacts__img {
+        position: absolute;
+        left: 0; } }
     .contacts__img img {
       height: 100%;
       width: 100%;

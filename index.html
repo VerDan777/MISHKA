@@ -18,10 +18,10 @@
       <div class="main-nav__menu-icon"><img src="./img/menu.png" alt="menu"/></div>
       <div class="main-menu">
         <ul class="main-menu__list">
-          <li class="main-menu__item"><a class="main-menu__link" href="#catalog">Каталог товаров</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="##">Вязание на заказ</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="##">Поиск по сайту</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#form">Корзина: пока пуста</a></li>
+          <div class="main-menu__catalog">
+            <li class="main-menu__item"><a class="main-menu__link" href="#catalog">Каталог товаров</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Вязание на заказ</a></li>
+          </div>
         </ul>
       </div>
     </nav>
@@ -69,26 +69,28 @@
   <section class="section about">
     <div class="wrapper wrapper--about">
       <h2 class="section__title">Коротко о нас:</h2>
-      <ul class="about__list">
-        <li><img class="about__img" src="./img/flower.png"/>
-          <p class="section__text section__text--bold">Экологически чистые материалы</p>
-        </li>
-        <li><img class="about__img" src="./img/note.png"/>
-          <p class="section__text section__text--bold">Скандинавский стиль по российской цене</p>
-        </li>
-        <li><img class="about__img" src="./img/heart.png"/>
-          <p class="section__text section__text--bold">Увеличивает лайки на фотографиях</p>
-        </li>
-        <li><img class="about__img" src="./img/clew.png    "/>
-          <p class="section__text section__text--bold">Связано вручную с любовью и умилением</p>
-        </li>
-        <li><img class="about__img" src="./img/rocket.png"/>
-          <p class="section__text section__text--bold">Поддержка отечественного производителя</p>
-        </li>
-        <li><img class="about__img" src="./img/gift.png"/>
-          <p class="section__text section__text--bold">Поставляется в подарочной упаковке</p>
-        </li>
-      </ul>
+      <div class="wrapper wrapper--about">
+        <ul class="about__list">
+          <li><img class="about__img" src="./img/flower.png"/>
+            <p class="section__text section__text--bold">Экологически чистые материалы</p>
+          </li>
+          <li><img class="about__img" src="./img/note.png"/>
+            <p class="section__text section__text--bold">Скандинавский стиль по российской цене</p>
+          </li>
+          <li><img class="about__img" src="./img/heart.png"/>
+            <p class="section__text section__text--bold">Увеличивает лайки на фотографиях</p>
+          </li>
+          <li><img class="about__img" src="./img/clew.png    "/>
+            <p class="section__text section__text--bold">Связано вручную с любовью и умилением</p>
+          </li>
+          <li><img class="about__img" src="./img/rocket.png"/>
+            <p class="section__text section__text--bold">Поддержка отечественного производителя</p>
+          </li>
+          <li><img class="about__img" src="./img/gift.png"/>
+            <p class="section__text section__text--bold">Поставляется в подарочной упаковке</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="section reviews"><img class="reviews__img" src="./img/review.png" alt="review"/>
@@ -109,7 +111,8 @@
   </section>
   <section class="section contacts">
     <div class="wrapper">
-      <h2 class="section__title">Контакты</h2><img class="contacts__img" src="./img/flag.png" alt="contacts"/>
+      <h2 class="section__title">Контакты</h2>
+      <div class="contacts__image"><img class="contacts__img" src="./img/flag.png" alt="contacts"/></div>
       <table class="table table--info">
         <tr>
           <td> email:</td>
@@ -130,7 +133,7 @@
   </section>
   <footer class="site-footer">
     <div class="site-footer__container">
-      <div class="logo">
+      <div class="logo logo--footer">
         <picture><img class="logo__img" src="./img/mishka-logo.png" alt="logo"/></picture>
       </div>
       <ul class="site-footer__list">
