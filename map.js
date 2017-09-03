@@ -13,7 +13,7 @@
             new google.maps.Point(16,32)
         );
             var marker = new google.maps.Marker({
-                draggable: false,
+                draggable: false,   
                 raiseOnDrag: false,
                 animation: google.maps.Animation.BOUNCE,
                 icon: imagemarker,
