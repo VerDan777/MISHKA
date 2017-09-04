@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 .section {
   padding: 0px 30px;
   margin: 50px 0;
-  font-size: 0rem; }
+  font-size: 1rem; }
   .section__content {
     padding-top: 60px; }
   .section__title {
@@ -428,7 +428,11 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 1200px) {
       .section__title {
         font-size: 3rem;
-        display: block; } }
+        display: inline-block;
+        text-align: justify; } }
+    .section__title--center {
+      text-align: center;
+      display: block; }
   .section__subtitle {
     margin: 10px 0;
     font-family: 'OpenSans', sans-serif;
@@ -454,14 +458,16 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1170px; }
   .wrapper--center {
     text-align: center; }
+    @media (min-width: 700px) {
+      .wrapper--center {
+        text-align: justify; } }
+  .wrapper--logo {
+    text-align: center; }
   .wrapper--button {
     text-align: center; }
   @media (min-width: 700px) {
     .wrapper--about {
       text-align: center; } }
-  @media (min-width: 1200px) {
-    .wrapper--about {
-      text-align: left; } }
   .wrapper--review {
     text-align: center; }
     @media (min-width: 700px) {
@@ -634,32 +640,32 @@ h1, h2, h3, h4, h5, h6 {
   .table--info__underline {
     border-bottom: 1px solid #62d1ba; }
 
-.card {
-  text-align: center; }
+@media (min-width: 700px) {
+  .card {
+    margin-bottom: 200px;
+    text-align: justify; } }
+
+.card__price {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #575757; }
   @media (min-width: 700px) {
-    .card {
-      margin-bottom: 200px;
-      text-align: justify; } }
-  .card__price {
-    padding: 30px 0;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #575757; }
-    @media (min-width: 700px) {
-      .card__price {
-        text-align: left; } }
-  .card__img {
-    padding: 30px 0; }
-    @media (min-width: 700px) {
-      .card__img {
-        width: 45%;
-        height: 90%;
-        position: absolute;
-        right: 0;
-        top: 75px; } }
-    .card__img img {
-      height: 100%;
-      width: 100%; }
+    .card__price {
+      text-align: left; } }
+
+.card__img {
+  padding: 30px 0; }
+  @media (min-width: 700px) {
+    .card__img {
+      width: 45%;
+      height: 90%;
+      position: absolute;
+      right: 0;
+      top: 75px; } }
+  .card__img img {
+    height: 100%;
+    width: 100%; }
 
 .button {
   border: 3px solid #444444;
