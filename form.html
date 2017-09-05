@@ -46,50 +46,74 @@
     </div>
     <div class="section wrapper">
       <p class="section__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form">
-        <h2 class="form__title">ТИП</h2>
-        <div class="form__input-container">
-          <input class="form__input" type="radio" checked="checked"/>
-          <p class="form__input-text">Аксессуары для интерьера</p>
+      <div class="form__wrapper">
+        <form class="form">
+          <h2 class="form__title">ТИП</h2>
+          <div class="form__input-container">
+            <input class="form__input" type="radio" checked="checked"/>
+            <p class="form__input-text">Аксессуары для интерьера</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input" type="radio" checked="checked"/>
+            <p class="form__input-text">Детская игрушка</p>
+          </div>
+        </form>
+        <form class="form">
+          <h2 class="form__title">Цвет</h2>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">Белый</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">Серый</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">«Тиффани»</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">Черный</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">Розовый</p>
+          </div>
+          <div class="form__input-container">
+            <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
+            <p class="form__input-text">Оранжевый</p>
+          </div>
+        </form>
+        <form class="form">
+          <h2 class="form__title">ФИО</h2>
+          <div class="form__input-container">
+            <label class="form__label">Фамилия: <br></label>
+            <input class="form__input--textbox" type="text" placeholder="Укажите фамилию"/>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">Имя: <br></label>
+            <input class="form__input--textbox" type="text" placeholder="Укажите ваше имя"/>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">Отчество: <br></label>
+            <input class="form__input--textbox" type="text" placeholder="Укажите ваше Отчество"/>
+          </div>
+        </form>
+        <form class="form">
+          <h2 class="form__title">ТЕЛ</h2>
+          <input class="form__input form__input--textbox" type="text" placeholder="Укажите ваш телефон"/>
+          <h2 class="form__title">E-MAIL</h2>
+          <input class="form__input form__input--textbox" type="text" placeholder="E-mail"/>
+        </form>
+        <form class="form">
+          <h2 class="form__title">ДОП</h2>
+          <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </form>
+        <div class="wrapper--center">
+          <button class="button button--full"><a href="#">Отправить заказ</a></button>
         </div>
-        <div class="form__input-container">
-          <input class="form__input" type="radio" checked="checked"/>
-          <p class="form__input-text">Детская игрушка</p>
-        </div>
-      </form>
-      <form class="form">
-        <h2 class="form__title">Цвет</h2>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-        <input class="form__input" type="checkbox" checked="checked"/>
-        <p class="form__input-text">Аксессуары для интереьера</p>
-      </form>
-      <form class="form">
-        <h2 class="form__title">ФИО</h2>
-        <label>Фамилия</label>
-        <input class="form__input" type="text" placeholder="Укажите фамилию"/>
-        <label>Имя</label>
-        <input class="form__input" type="text" placeholder="Укажите ваше имя"/>
-      </form>
-      <form class="form">
-        <h2 class="form__title">ТЕЛ</h2>
-        <input class="form__input" type="text" placeholder=""/>
-        <h2 class="form__title">E-MAIL</h2>
-        <input class="form__input" type="text" placeholder="E-mail"/>
-      </form>
-      <form class="form">
-        <h2 class="form__title">ДОП</h2>
-        <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      </form>
-      <button class="button"><a href="#">Отправить заказ</a></button>
+      </div>
     </div>
   </nav>
   <footer class="site-footer">
