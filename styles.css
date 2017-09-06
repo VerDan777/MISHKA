@@ -832,6 +832,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f1f1f1;
     width: 100%;
     padding: 80px 0; }
+    @media (min-width: 700px) {
+      .catalog__preview {
+        text-align: center; } }
   .catalog__card-row {
     width: 100%; }
   .catalog__card {
@@ -936,7 +939,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%; }
 
 .form {
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: relative; }
+  .form--grey {
+    background-color: #f1f1f1; }
+  .form__container {
+    position: absolute;
+    top: 55%;
+    right: 25%; }
   .form__wrapper {
     margin: 50px 0; }
   .form__title {
@@ -944,15 +954,31 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #63d1bb;
     border-left: none;
     margin: 20px 0; }
+    @media (min-width: 700px) {
+      .form__title {
+        display: inline-block;
+        border: none; } }
     .form__title::before {
       content: '';
       border-right: 1px solid #63d1bb; }
+      @media (min-width: 700px) {
+        .form__title::before {
+          display: none; } }
   .form__label {
     font-weight: bold;
     font-family: 'Verdana',sans-serif; }
   .form__input {
     background-color: #62d1ba;
     outline: none; }
+    .form__input--radio {
+      width: 28px;
+      height: 28px;
+      position: relative;
+      margin: 20px auto;
+      background: #fcfff4;
+      background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      border-radius: 50px;
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); }
     .form__input--textbox {
       background-color: white;
       border-bottom: 2px solid black;
@@ -961,6 +987,35 @@ h1, h2, h3, h4, h5, h6 {
       border-right: none;
       width: 100%;
       padding: 15px 0; }
+      @media (min-width: 700px) {
+        .form__input--textbox {
+          background-color: #f1f1f1; } }
+      .form__input--textbox--grey {
+        background-color: #f1f1f1; }
+  .form label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white; }
+    .form label:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      background: green;
+      background: linear-gradient(top, green 0%, green 100%);
+      opacity: 0;
+      border-radius: 50px;
+      box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5); }
+    .form label:hover::after {
+      opacity: 0.3; }
   .form__input-container {
     padding-bottom: 20px; }
   .form__input-text {
@@ -972,3 +1027,38 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid black;
     width: 100%;
     height: 150px; }
+
+input[type=radio].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+input[type=radio].css-checkbox + label.css-label {
+  padding-left: 41px;
+  height: 36px;
+  display: inline-block;
+  line-height: 36px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 36px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+input[type=radio].css-checkbox:checked + label.css-label {
+  background-position: 0 -36px; }
+
+label.css-label {
+  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_db90a821b8d1c3cc963948854fe8ce92.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }

@@ -49,16 +49,20 @@
       <div class="form__wrapper">
         <form class="form">
           <h2 class="form__title">ТИП</h2>
-          <div class="form__input-container">
-            <input class="form__input" type="radio" checked="checked"/>
-            <p class="form__input-text">Аксессуары для интерьера</p>
-          </div>
-          <div class="form__input-container">
-            <input class="form__input" type="radio" checked="checked"/>
-            <p class="form__input-text">Детская игрушка</p>
+          <div class="form__container">
+            <div class="form__input-container">
+              <input class="form__input form__input--radio" type="radio" checked="checked"/>
+              <label for="form__input--radio"></label>
+              <p class="form__input-text">Аксессуары для интерьера</p>
+            </div>
+            <div class="form__input-container">
+              <input class="form__input form__input--radio" type="radio" checked="checked"/>
+              <label for="form__input--radio"></label>
+              <p class="form__input-text">Детская игрушка</p>
+            </div>
           </div>
         </form>
-        <form class="form">
+        <form class="form form--grey">
           <h2 class="form__title">Цвет</h2>
           <div class="form__input-container">
             <input class="form__input form__input--checkbox" type="checkbox" checked="checked"/>
@@ -89,22 +93,22 @@
           <h2 class="form__title">ФИО</h2>
           <div class="form__input-container">
             <label class="form__label">Фамилия: <br></label>
-            <input class="form__input--textbox" type="text" placeholder="Укажите фамилию"/>
+            <input class="form__input--textbox formt__input--textbox--white" type="text" placeholder="Укажите фамилию"/>
           </div>
           <div class="form__input-container">
             <label class="form__label">Имя: <br></label>
-            <input class="form__input--textbox" type="text" placeholder="Укажите ваше имя"/>
+            <input class="form__input--textbox formt__input--textbox--white" type="text" placeholder="Укажите ваше имя"/>
           </div>
           <div class="form__input-container">
             <label class="form__label">Отчество: <br></label>
-            <input class="form__input--textbox" type="text" placeholder="Укажите ваше Отчество"/>
+            <input class="form__input--textbox formt__input--textbox--white" type="text" placeholder="Укажите ваше Отчество"/>
           </div>
         </form>
-        <form class="form">
+        <form class="form--grey">
           <h2 class="form__title">ТЕЛ</h2>
-          <input class="form__input form__input--textbox" type="text" placeholder="Укажите ваш телефон"/>
+          <input class="form__input form__input--textbox form__input--textbox--grey" type="text" placeholder="Укажите ваш телефон"/>
           <h2 class="form__title">E-MAIL</h2>
-          <input class="form__input form__input--textbox" type="text" placeholder="E-mail"/>
+          <input class="form__input form__input--textbox form__input--textbox--grey" type="text" placeholder="E-mail"/>
         </form>
         <form class="form">
           <h2 class="form__title">ДОП</h2>
