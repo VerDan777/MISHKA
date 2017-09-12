@@ -414,12 +414,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 30px;
   margin: 50px 0;
   font-size: 1rem; }
+  @media (min-width: 700px) {
+    .section {
+      padding: 0 50px; } }
   .section__content {
     padding-top: 60px; }
   .section__title {
     font-family: 'Verdana', sans-serif;
     font-size: 1.5rem;
-    text-align: center; }
+    text-align: left; }
     @media (min-width: 700px) {
       .section__title {
         font-size: 2rem;
@@ -458,6 +461,9 @@ h1, h2, h3, h4, h5, h6 {
           display: inline-block;
           padding-left: 100px;
           margin: 0 0; } }
+      @media (min-width: 900px) {
+        .section__text--required {
+          padding-left: 0; } }
     @media (min-width: 1200px) {
       .section__text {
         padding-left: 20%;
@@ -474,9 +480,6 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 700px) {
       .wrapper--center {
         text-align: justify; } }
-    @media (min-width: 1200px) {
-      .wrapper--center {
-        text-align: center; } }
   .wrapper--logo {
     text-align: center; }
   .wrapper--button {
@@ -541,17 +544,18 @@ h1, h2, h3, h4, h5, h6 {
     .main-menu__item {
       display: inline-block; } }
 
+@media (min-width: 700px) {
+  .main-menu__catalog {
+    display: inline-block; } }
+
 .main-menu__offer {
   display: none; }
-  @media (min-width: 700px) {
-    .main-menu__offer {
-      display: block; } }
 
 .main-menu__delivery {
   display: none; }
   @media (min-width: 700px) {
     .main-menu__delivery {
-      display: block; } }
+      display: inline-block; } }
 
 .main-menu__link {
   color: black;
@@ -626,9 +630,14 @@ h1, h2, h3, h4, h5, h6 {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: none; }
+  border-bottom: none;
+  width: 100%; }
+  @media (min-width: 700px) {
+    .table {
+      width: 50%; } }
   .table td {
-    padding: 25px 25px;
+    padding: 25px 55px;
+    padding-left: 0;
     color: #444444;
     border: 1px solid #444444;
     border-left: none;
@@ -637,7 +646,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .table--info {
   border-bottom: none;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .table--info {
+      display: block;
+      width: 40%;
+      float: left; } }
   .table--info__td {
     border-bottom: none;
     border: none; }
@@ -687,10 +702,11 @@ h1, h2, h3, h4, h5, h6 {
   border: 3px solid #444444;
   background: none;
   display: inline-block;
-  padding: 20px 50px; }
-  @media (min-width: 1200px) {
+  padding: 20px 50px;
+  width: 100%; }
+  @media (min-width: 700px) {
     .button {
-      margin-left: 19%; } }
+      width: 50%; } }
   .button:hover {
     background-color: black; }
   .button--full {
@@ -703,7 +719,8 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         right: 0;
         margin-top: -0.625em;
-        margin: 0 0; } }
+        margin: 0 0;
+        width: 25%; } }
   .button--accept {
     margin: 35px 0; }
     @media (min-width: 700px) {
@@ -760,6 +777,9 @@ h1, h2, h3, h4, h5, h6 {
         left: 0;
         top: 0;
         display: block; } }
+    @media (min-width: 1200px) {
+      .reviews__img {
+        left: 350px; } }
     .reviews__img img {
       width: 100%;
       height: 100%;
@@ -777,8 +797,9 @@ h1, h2, h3, h4, h5, h6 {
     .arrow {
       margin: 20px 0;
       position: absolute;
-      right: 100px;
-      border: none; } }
+      right: 50px;
+      border: none;
+      width: 25%; } }
   .arrow__left {
     padding: 10px 20%;
     display: inline-block;
@@ -824,6 +845,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 400px;
   width: 100%;
   margin: 50px 0; }
+  @media (min-width: 1200px) {
+    #map {
+      width: 25%; } }
 
 .contacts {
   padding: 0 0; }
@@ -958,7 +982,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%; }
 
 .form {
-  padding: 20px 0;
   position: relative;
   margin-bottom: 50px; }
   .form--grey {
@@ -966,10 +989,9 @@ h1, h2, h3, h4, h5, h6 {
     @media (min-width: 700px) {
       .form--grey {
         background-color: #f1f1f1; } }
-  .form__container {
-    position: absolute;
-    top: 55%;
-    right: 25%; }
+  @media (min-width: 700px) {
+    .form__container {
+      padding-left: 30%; } }
   @media (min-width: 700px) {
     .form-container-check {
       padding-left: 30%;
@@ -984,7 +1006,6 @@ h1, h2, h3, h4, h5, h6 {
     border: none; }
   .form__title {
     color: #63d1bb;
-    border-bottom: 1px solid #63d1bb;
     border-left: none;
     margin: 20px 0; }
     @media (min-width: 700px) {
