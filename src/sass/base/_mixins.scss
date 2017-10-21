@@ -1,0 +1,62 @@
+@mixin container {
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include atTabletsPortrait {
+    width: 668px;
+  }
+
+  @include atDesktop {
+    width: 1050px;
+  }
+}
+
+@mixin form-title {
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-cyan;
+  text-transform: uppercase;
+}
+
+@mixin placeholder-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-text-placeholder;
+
+  @include atTabletsPortrait {
+    font-size: 19px;
+  }
+}
+
+@mixin atSmall {
+  @media (max-width: 340px) {
+      @content;
+  }
+}
+
+@mixin atTabletsPortrait {
+  @media (min-width: 768px) {
+      @content;
+  }
+}
+
+@mixin atTabletsLandscape {
+  @media (min-width: 900px) {
+      @content;
+  }
+}
+
+@mixin atDesktop {
+  @media (min-width: 1150px) {
+      @content;
+  }
+}
+
+@mixin atDesktopLarge {
+  @media (min-width: 1500px) {
+      @content;
+  }
+}

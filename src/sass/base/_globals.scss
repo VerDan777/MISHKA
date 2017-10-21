@@ -1,0 +1,30 @@
+html {
+    // box model
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    // box model
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+
+    //typography
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 24px;
+    color: $color-text-ordinary;
+    font-style: normal;
+
+    // visual
+    overflow-x: hidden;
+  }
+
+  *,
+  &::before,
+  &::after {
+      box-sizing: border-box;
+
+}

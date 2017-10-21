@@ -1,0 +1,42 @@
+.order {
+  margin-bottom: 54px;
+  padding-top: 22px;
+
+  @include atTabletsPortrait {
+    margin-bottom: 37px;
+  }
+}
+
+.order__container {
+  @include container;
+
+  @include atTabletsPortrait {
+    width: auto;
+    margin: 0;
+  }
+
+  @include atDesktop {
+    width: auto;
+  }
+}
+
+.order__description {
+  margin: 0;
+
+  font-size: 13px;
+
+  @include atTabletsPortrait {
+    width: 668px;
+    margin-top: 51px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include atDesktop {
+    width: 700px;
+    margin-top: 101px;
+  }
+}
