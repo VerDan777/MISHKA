@@ -6,3 +6,4 @@ require('./gulp/tasks/production');
 require('./gulp/tasks/watch');
 require('./gulp/tasks/symbols');
 require('./gulp/tasks/copy');
+require('./gulp/tasks/gh-pages');
