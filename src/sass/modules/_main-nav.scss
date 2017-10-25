@@ -99,7 +99,8 @@
   width: 204px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 46px;
+  text-align: center;
+  font-weight: bold;
 
   @include atTabletsPortrait {
     width: auto;

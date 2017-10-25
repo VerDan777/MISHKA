@@ -103,6 +103,7 @@
   line-height: 30px;
   text-align: center;
   color: $color-text-title;
+  font-family: $mainFont;
 
   @include atTabletsPortrait {
     padding-top: 39px;

@@ -1,32 +1,36 @@
 .btn {
+  // box model
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  width: 260px;
+  width: 100%;
   padding-top: 16px;
   padding-right: 10px;
   padding-bottom: 16px;
   padding-left: 10px;
+  text-align: center;
 
+  // typography
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
-  text-align: center;
-  color: $color-text-ordinary;
   text-transform: uppercase;
   text-decoration: none;
 
+  // visual
+  color: $color-text-ordinary;
   background-color: #ffffff;
   border: 2px solid $color-text-ordinary;
   cursor: pointer;
 
   &:hover {
+    // visual
     color: #ffffff;
-
     background-color: #444444;
   }
 
   &:active {
+    // visual
     color: #7c7c7c;
   }
 }

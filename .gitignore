@@ -1,3 +1,4 @@
+.publish
 build/
 .DS_Store
 *.ai

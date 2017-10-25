@@ -8,11 +8,14 @@
 }
 
 .order__container {
-  @include container;
+  // @include container;
+  padding: 0 30px;
 
   @include atTabletsPortrait {
     width: auto;
     margin: 0;
+  @include container;
+    
   }
 
   @include atDesktop {

@@ -183,7 +183,12 @@
   padding-right: 34px;
   padding-left: 34px;
 
-  font-size: 13px;
+  // typography
+  font-family: $OpenSans;
+  font-size: 14px;
+
+  // visual
+  color: #444444;
 
   @include atTabletsPortrait {
     margin-bottom: 35px;

@@ -6,6 +6,12 @@ gulp.task('watch', function() {
     BrowserSync.init({
         server : {
             baseDir: './src/dist'
+        },
+        notify: {
+            styles: {
+                top: "auto",
+                bottom: 0
+            }
         }
     })
 });

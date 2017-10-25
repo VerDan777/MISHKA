@@ -387,8 +387,8 @@
         content: "";
         // positioning
         position: absolute;
-        top: 7px;
-        left: 0;
+        top: 8px;
+        left: 2px;
 
         // box model
         display: block;
@@ -422,7 +422,7 @@
   &--toys {
       &::before {
         // positioning
-        top: -1px;
+        top: 8px;
       }
   }
 

@@ -57,14 +57,16 @@
 .reviews__container {
   display: flex;
   flex-direction: column;
-
-  @include container;
+  padding: 0 30px;
+  // @include container;
 
   @include atTabletsPortrait {
+    @include container;    
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0;
   }
 
   @include atDesktop {
@@ -91,7 +93,8 @@
   margin-bottom: 24px;
 
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.6rem;
+  font-family: 'Verdana Bold', sans-serif;
   line-height: 30px;
   color: $color-text-title;
 
@@ -158,7 +161,8 @@
   margin-top: 3px;
 
   font-weight: normal;
-  font-size: 18px;
+  font-size: 0.9rem;
+  color: #444;
   line-height: 30px;
   vertical-align: baseline;
 
@@ -189,7 +193,7 @@
 .reviews__btn {
   width: 50%;
   height: 52px;
-
+  border-radius: 0;
   background-color: #ffffff;
   border: 1px solid #ececec;
   cursor: pointer;

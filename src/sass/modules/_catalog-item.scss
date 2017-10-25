@@ -1,134 +1,166 @@
 .catalog-item {
+  // box model
   display: flex;
   flex-direction: column;
   margin-bottom: 29px;
 
-  border-bottom: 1px solid #ededed;
+  // visual
+  // border-bottom: 1px solid #ededed;
 
   &:last-child {
+    // box model
     margin-bottom: 0;
   }
-
+  
   @include atTabletsPortrait {
+    // box model
     flex-direction: row;
     margin-bottom: 53px;
   }
 
   @include atDesktop {
+    // box model
     flex-direction: column;
     width: 315px;
     margin-right: 52px;
     margin-bottom: 0;
     padding-bottom: 30px;
 
+    // visual
     border: 0;
 
     &:nth-child(3n) {
+      // box model
       margin-right: 0;
     }
   }
 }
 
 .catalog-item__title {
+  // typography
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  color: $color-text-title;
   text-decoration: none;
 
+  // visual
+  color: $color-text-title;
+
   &:hover {
+    // visual
     opacity: 0.6;
   }
 
   &:active {
+    // visual
     opacity: 0.3;
   }
 
   @include atTabletsPortrait {
+    // typography
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .catalog-item__description {
+  // box model
   margin: 0;
   margin-bottom: 19px;
 
+  // typograpghy
   font-size: 13px;
   line-height: 30px;
 
   @include atTabletsPortrait {
+    // box model
     margin-top: -3px;
 
+    // typography
     font-size: 15px;
     line-height: 30px;
   }
 
   @include atTabletsPortrait {
+    // box model
     margin-bottom: 8px;
   }
 }
 
 .catalog-item__img {
   @include atTabletsPortrait {
+    // box model
     width: 334px;
     height: 334px;
   }
 
   @include atDesktop {
+    // box model
     width: 315px;
     height: 462px;
   }
 }
 
 .catalog-item__img img {
+  // box model
   display: block;
   width: 100%;
   height: 100%;
 }
 
 .catalog-item__content {
+  // box model
   display: flex;
   flex-direction: column;
   padding-top: 6px;
 
+  // visual
   border-right: 1px solid #ededed;
   border-left: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
 
   @include atTabletsPortrait {
+    // box model
     width: 274px;
     padding-top: 26px;
     padding-right: 30px;
     padding-left: 30px;
 
+    // visual
     border-top: 1px solid #ededed;
   }
 
   @include atDesktop {
+    // box model
     flex-grow: 1;
-    width: 253px;
+    width: 100%;
     padding-right: 33px;
     padding-left: 27px;
 
+    // visual
     border: 1px solid #ededed;
     border-top: 0;
   }
 }
 
 .catalog-item:hover .catalog-item__content {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  // visual
+  // box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-item:active .catalog-item__content {
+  // visual
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-item__info {
+  // box model
   width: 205px;
   margin: 0 auto;
   padding-top: 20px;
 
   @include atTabletsPortrait {
+    // box model
     width: auto;
     margin: 0;
     padding-top: 0;
@@ -136,11 +168,13 @@
   }
 
   @include atDesktop {
+    // box model
     padding-right: 20px;
   }
 }
 
 .catalog-item__order {
+  // box model
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,6 +183,7 @@
   padding-top: 23px;
   padding-bottom: 25px;
 
+  // visual
   border-top: 1px solid #ededed;
 
   @include atTabletsPortrait {
@@ -167,6 +202,8 @@
   font-weight: bold;
   font-size: 15px;
   color: $color-text-title;
+  font-family: $mainFont;
+  letter-spacing: 1px;
 
   @include atTabletsPortrait {
     display: block;

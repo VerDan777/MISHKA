@@ -19,6 +19,7 @@
     height: 457px;
     margin-bottom: 105px;
     padding-top: 30px;
+    padding: 10px;
 
     @include container;
 
@@ -36,10 +37,13 @@
 
 .contacts__container {
   position: relative;
+  // padding:  0 30px;
+  padding-left: 30px;
 
-  @include container;
 
   @include atTabletsPortrait {
+    @include container;
+    padding: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -79,7 +83,8 @@
   margin: 0;
   margin-bottom: 26px;
 
-  font-size: 18px;
+  font-size: 1.6rem;
+  font-family: 'Verdana Bold',sans-serif;
   line-height: 30px;
   color: $color-text-title;
 
@@ -186,7 +191,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-
+  width: 80%;
   @include atTabletsPortrait {
     width: 230px;
   }
