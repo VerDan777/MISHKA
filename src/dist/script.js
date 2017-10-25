@@ -8,7 +8,7 @@ mainHeaderTop.classList.remove("no-js");
 
 hamburger.addEventListener("click", function(event) {
   event.preventDefault();
-
+  // mainHeaderTop.classList.add("no-js");  
   hamburger.classList.toggle("main-header__toggle--opened");
   mainNav.classList.toggle("main-nav--closed");
   userNav.classList.toggle("user-nav--closed");

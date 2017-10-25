@@ -186,12 +186,14 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: block;
   list-style-type: none;
   font-size: 0;
   position: absolute;
   top: 77px;
   z-index: 2;
-  left: 0; }
+  left: 0;
+  background-color: #ffffff; }
   .main-nav--closed {
     display: none; }
   @media (min-width: 768px) {
@@ -275,7 +277,8 @@ body {
   position: absolute;
   top: 247px;
   left: 0;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #ffffff; }
   .user-nav--closed {
     display: none; }
   @media (min-width: 768px) {
@@ -399,7 +402,7 @@ body {
   opacity: 0.3; }
 
 .promo {
-  padding-top: 70px;
+  padding-top: 120px;
   background-color: #fafafa;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
