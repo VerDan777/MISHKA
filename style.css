@@ -110,9 +110,6 @@ body {
     .main-header__toggle {
       display: none; } }
 
-.no-js .main-header__toggle {
-  display: none; }
-
 .main-header__toggle--closed {
   background-image: url("../img/icon-menu-close.svg"); }
 
@@ -191,10 +188,6 @@ body {
   padding: 0;
   list-style-type: none;
   font-size: 0;
-  position: absolute;
-  top: 77px;
-  z-index: 2;
-  left: 0;
   background-color: #ffffff; }
   .main-nav--closed {
     display: none; }
@@ -203,17 +196,16 @@ body {
       -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
       order: 4;
-      width: 60%; } }
+      width: 60%;
+      position: static;
+      display: block;
+      background: none; } }
   @media (min-width: 1150px) {
     .main-nav {
       -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
       order: 1;
       width: 43%; } }
-
-.no-js .main-nav {
-  position: static;
-  display: block; }
 
 .main-nav__container {
   display: none; }
@@ -280,10 +272,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  top: 247px;
-  left: 0;
-  z-index: 2;
   background-color: #ffffff; }
   .user-nav--closed {
     display: none; }
@@ -296,13 +284,15 @@ body {
       box-sizing: border-box;
       width: auto;
       height: 89px;
+      border-bottom: 2px solid #ececec;
       font-size: 0;
-      text-align: right; } }
+      text-align: right;
+      position: static;
+      display: block; } }
 
-.no-js .user-nav {
+.no-js {
   position: static;
-  display: block;
-  border-bottom: 2px solid #ececec; }
+  display: block; }
 
 .user-nav__item {
   border-top: 1px solid #ececec; }
@@ -312,7 +302,6 @@ body {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       height: 89px;
-      border-bottom: 2px solid #e7e7e7;
       vertical-align: top;
       border-top: 0; } }
 
@@ -320,7 +309,7 @@ body {
   .user-nav__item:first-child {
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
-    border-bottom: 2px solid #ececec; } }
+    border-bottom: 1px solid #ececec; } }
 
 .user-nav__link {
   display: block;
@@ -2431,7 +2420,7 @@ body {
       background-color: #63d1bb;
       border-radius: 50%; }
   .order-form__label--toys::before {
-    top: -1px; }
+    top: 8px; }
   .order-form__label--checkbox {
     padding-top: 20px;
     padding-bottom: 6px;
