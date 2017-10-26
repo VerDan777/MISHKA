@@ -16,7 +16,7 @@ html(lang="ru")
               source(media="(min-width: 1150px)", srcset="img/logo-desktop.svg")
               source(media="(min-width: 768px)", srcset="img/logo-tablet.svg")
               img(src="img/logo-mobile.svg", alt="Мишка")
-          button.main-header__toggle.main-header__toggle--opened(type="button") Открыть меню
+          button.main-header__toggle(type="button") Открыть меню
           ul.main-nav.main-nav--closed
             li.main-nav__item
               a.main-nav__link.main-nav__link--catalog(href="#")
@@ -174,4 +174,4 @@ html(lang="ru")
             label.to-cart__label(for="l-size") L
         button.to-cart__submit.btn(type="submit") Добавить
 
-    script(src="script.js")
+    //- script(src="menu.js")

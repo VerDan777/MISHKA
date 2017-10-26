@@ -89,9 +89,11 @@
 }
 
 .no-js .main-header__toggle {
-  display: none;
+display: none;
 }
-
+.main-header__toggle--closed {
+  background-image: url("../img/icon-menu-close.svg");
+}
 .main-header__title {
   margin: 0;
   padding: 0;

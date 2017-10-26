@@ -1,137 +1,417 @@
+// .best-seller {
+//   // positioning
+//   position: relative;
+
+//   // box model
+//   padding-top: 28px;
+
+//   &:before {
+//     // positioning
+//     content: "";
+//     position: absolute;
+//     top: -19px;
+//     // box model
+//     display: none;
+//     width: 100%;
+//     height: 24px;
+
+//     // visual
+//     background-image: url("../img/bg-zigzag-fill.svg");
+//     background-repeat: repeat-x;
+//     background-size: 768px 24px;
+//   }
+
+//   @include atTabletsPortrait {
+//     // box model
+//     padding-top: 39px;
+//     &:before {
+//       // box model
+//       display: block;
+//     }
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     margin-top: -42px;
+//     padding-top: 0;
+
+//     &:before {
+//       // positioning
+//       top: 17px;
+
+//       // box model
+//       height: 34px;
+
+//       // visual
+//       background-size: 1150px 34px;
+//     }
+//   }
+// }
+
+// .best-seller__container {
+//   // @include container;
+//   // box model
+//   padding: 0 30px;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     @include container;
+//     padding: 0;
+//   }
+// }
+
+// .best-seller__header {
+//   // box model
+//   display: flex;
+//   flex-direction: column;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     flex-direction: row;
+//     margin-bottom: 38px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     margin-bottom: 35px;
+//     transform: translateY(159px);
+//   }
+// }
+
+// .best-seller__title {
+//   // box model
+//   margin: 0;
+//   margin-bottom: 7px;
+//   padding: 0;
+
+//   // typography
+//   font-weight: bold;
+//   font-size: 25px;
+//   line-height: 30px;
+
+//   // visual
+//   color: $color-text-title;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     flex-grow: 1;
+//     width: 540px;
+
+//     // typography
+//     font-size: 43px;
+//     line-height: 50px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     order: 1;
+//     // typography
+//     font-size: 53px;
+//     line-height: 57px;
+//   }
+// }
+
+// .best-seller__state {
+//   // box model
+//   margin-bottom: 24px;
+
+//   // typography
+//   font-weight: bold;
+//   line-height: 16px;
+//   text-transform: uppercase;
+
+//   // visual
+//   color: $color-cyan;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     width: 125px;
+//     margin-top: 12px;
+//     text-align: center;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     margin-top: 15px;
+//     padding-right: 25px;
+//     padding-left: 21px;
+//     //width: 125px;
+//   }
+// }
+
+// .best-seller__content {
+
+//   @include atTabletsPortrait {
+//     // box model
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-content: space-between;
+//     height: 404px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     height: 636px;
+//     padding-left: 175px;
+//   }
+// }
+
+// .best-seller__buy {
+//   // box model
+//   text-align: center;
+//   @include atTabletsPortrait {
+//     // box model
+//     width: 292px;
+//     margin-top: auto;
+//   }
+
+//   @include atDesktop {
+//   }
+// }
+
+// .best-seller__description {
+//   // box model
+//   margin: 0;
+//   margin-bottom: 17px;
+
+//   // typography
+//   font-size: 15px;
+//   line-height: 24px;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     width: 292px;
+//     margin-top: -7px;
+//     margin-bottom: 35px;
+
+//     // typography
+//     font-size: 17px;
+//     line-height: 30px;
+//   }
+
+//   @include atTabletsPortrait {
+//     // box model
+//     margin-bottom: 49px;
+//     padding-top: 165px;
+//   }
+// }
+
+// .best-seller__table {
+//   // box model
+//   width: 100%;
+//   margin-bottom: 28px;
+
+//   // visual
+//   border-collapse: collapse;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     width: 292px;
+//     margin-bottom: 50px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     margin-bottom: 105px;
+//   }
+// }
+
+// .best-seller__table-row {
+//   // visual
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .best-seller__table-cell {
+//   // box model
+//   padding-top: 10px;
+//   padding-bottom: 9px;
+
+//   // typography
+//   font-size: 15px;
+//   line-height: 20px;
+
+//   &--value {
+//     // box model
+//     width: 162px;
+//   }
+
+//   @include atTabletsPortrait {
+//     &--value {
+//       // box model
+//       width: 195px;
+//     }
+//   }
+
+//   @include atDesktop {
+//     &--value {
+//       // box model
+//       width: 195px;
+//     }
+//   }
+// }
+
+// .best-seller__image {
+//   // box model
+//   // width: 260px;
+//   // height: 316px;
+//   margin-bottom: 25px;
+//   margin: auto;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     order: 2;
+//     width: 333px;
+//     height: 404px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     width: 525px;
+//     height: 636px;
+//   }
+// }
+
+// .best-seller__image img {
+//   // box model
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .best-seller__price {
+//   // box model
+//   margin-top: 26px; 
+//   margin-bottom: 26px;
+
+//   // typography
+//   font-family: 'Verdana',sans-serif;
+//   font-size: 1rem;
+//   font-weight: bold;
+//   text-align: center;
+
+//   @include atTabletsPortrait {
+//     // box model
+//     margin-bottom: 34px;
+    
+//     // typography
+//     font-size: 20px;
+//     line-height: 24px;
+//   }
+
+//   @include atDesktop {
+//     // box model
+//     margin-bottom: 34px;
+//   }
+// }
+
+// .best-seller__buy .best-seller__order {
+//   @include atTabletsPortrait {
+//     // box model
+//     width: 290px;
+//   }
+// }
+
 .best-seller {
-  // positioning
   position: relative;
 
-  // box model
   padding-top: 28px;
 
   &:before {
-    // positioning
     content: "";
     position: absolute;
     top: -19px;
-    // box model
+
     display: none;
     width: 100%;
     height: 24px;
 
-    // visual
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: 768px 24px;
   }
 
   @include atTabletsPortrait {
-    // box model
     padding-top: 39px;
     &:before {
-      // box model
       display: block;
     }
   }
 
   @include atDesktop {
-    // box model
     margin-top: -42px;
     padding-top: 0;
-
     &:before {
-      // positioning
       top: 17px;
 
-      // box model
       height: 34px;
 
-      // visual
       background-size: 1150px 34px;
     }
   }
 }
 
 .best-seller__container {
-  // @include container;
-  // box model
-  padding: 0 30px;
-
-  @include atTabletsPortrait {
-    // box model
-    @include container;
-    padding: 0;
-  }
+  @include container;
 }
 
 .best-seller__header {
-  // box model
   display: flex;
   flex-direction: column;
 
   @include atTabletsPortrait {
-    // box model
     flex-direction: row;
     margin-bottom: 38px;
   }
 
   @include atDesktop {
-    // box model
     margin-bottom: 35px;
+
     transform: translateY(159px);
   }
 }
 
 .best-seller__title {
-  // box model
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
 
-  // typography
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
-
-  // visual
   color: $color-text-title;
 
   @include atTabletsPortrait {
-    // box model
     flex-grow: 1;
     width: 540px;
 
-    // typography
     font-size: 43px;
     line-height: 50px;
   }
 
   @include atDesktop {
-    // box model
     order: 1;
-    // typography
+
     font-size: 53px;
     line-height: 57px;
   }
 }
 
 .best-seller__state {
-  // box model
   margin-bottom: 24px;
 
-  // typography
   font-weight: bold;
   line-height: 16px;
+  color: $color-cyan;
   text-transform: uppercase;
 
-  // visual
-  color: $color-cyan;
-
   @include atTabletsPortrait {
-    // box model
     width: 125px;
     margin-top: 12px;
+
     text-align: center;
   }
 
   @include atDesktop {
-    // box model
     margin-top: 15px;
     padding-right: 25px;
     padding-left: 21px;
@@ -140,9 +420,7 @@
 }
 
 .best-seller__content {
-
-  @include atTabletsPortrait {
-    // box model
+  @include atTabletsPortrait{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -151,17 +429,13 @@
   }
 
   @include atDesktop {
-    // box model
     height: 636px;
     padding-left: 175px;
   }
 }
 
 .best-seller__buy {
-  // box model
-  text-align: center;
   @include atTabletsPortrait {
-    // box model
     width: 292px;
     margin-top: auto;
   }
@@ -171,143 +445,115 @@
 }
 
 .best-seller__description {
-  // box model
   margin: 0;
   margin-bottom: 17px;
 
-  // typography
   font-size: 15px;
   line-height: 24px;
 
   @include atTabletsPortrait {
-    // box model
     width: 292px;
     margin-top: -7px;
     margin-bottom: 35px;
 
-    // typography
     font-size: 17px;
     line-height: 30px;
   }
 
-  @include atTabletsPortrait {
-    // box model
+  @include atDesktop {
     margin-bottom: 49px;
     padding-top: 165px;
   }
 }
 
 .best-seller__table {
-  // box model
   width: 100%;
   margin-bottom: 28px;
 
-  // visual
   border-collapse: collapse;
 
   @include atTabletsPortrait {
-    // box model
     width: 292px;
     margin-bottom: 50px;
   }
 
   @include atDesktop {
-    // box model
     margin-bottom: 105px;
   }
 }
 
 .best-seller__table-row {
-  // visual
   border-bottom: 1px solid #ececec;
 }
 
 .best-seller__table-cell {
-  // box model
   padding-top: 10px;
   padding-bottom: 9px;
 
-  // typography
   font-size: 15px;
   line-height: 20px;
 
   &--value {
-    // box model
     width: 162px;
   }
 
   @include atTabletsPortrait {
     &--value {
-      // box model
       width: 195px;
     }
   }
 
   @include atDesktop {
     &--value {
-      // box model
       width: 195px;
     }
   }
 }
 
 .best-seller__image {
-  // box model
-  // width: 260px;
-  // height: 316px;
+  width: 260px;
+  height: 316px;
   margin-bottom: 25px;
-  margin: auto;
 
   @include atTabletsPortrait {
-    // box model
     order: 2;
     width: 333px;
     height: 404px;
   }
 
   @include atDesktop {
-    // box model
     width: 525px;
     height: 636px;
   }
 }
 
 .best-seller__image img {
-  // box model
   width: 100%;
   height: 100%;
 }
 
 .best-seller__price {
-  // box model
-  margin-top: 26px; 
   margin-bottom: 26px;
 
-  // typography
-  font-family: 'Verdana',sans-serif;
-  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 
   @include atTabletsPortrait {
-    // box model
     margin-bottom: 34px;
-    
-    // typography
+
     font-size: 20px;
     line-height: 24px;
   }
 
   @include atDesktop {
-    // box model
     margin-bottom: 34px;
   }
 }
 
 .best-seller__buy .best-seller__order {
   @include atTabletsPortrait {
-    // box model
     width: 290px;
   }
 }
+
 

@@ -25,10 +25,21 @@ watch('./src/sass/**/*.scss', function() {
     gulp.start('cssInject');
 });
 
+
+// js
+watch("./src/js/**/*.js", function() {
+    gulp.start("jsChanged");
+});
+
+
 gulp.task('pugChanged', ['PugRender'], function() {
     BrowserSync.reload();
 });
 gulp.task('cssInject', ['styles'], function() {
     gulp.src('./src/dist/style.css')
     .pipe(BrowserSync.stream());
+});
+
+gulp.task("jsChanged", ["scripts"], function() {
+    BrowserSync.reload();
 });
