@@ -1,27 +1,33 @@
 .catalog {
+  // box model
   margin-bottom: 25px;
   padding-top: 30px;
 
+  // typography
   font-size: 0;
 
   @include atTabletsPortrait {
+    // box model
     margin-bottom: 51px;
     padding-top: 80px;
   }
 
   @include atDesktop {
+    // box model
     margin-bottom: 27px;
     padding-top: 130px;
   }
 }
 
 .catalog__container {
+  // box model
   display: flex;
   flex-direction: column;
 
   @include container;
 
   @include atDesktop {
+    // box model
     flex-direction: row;
     flex-wrap: wrap;
   }

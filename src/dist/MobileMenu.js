@@ -4,11 +4,11 @@ var mainNav = document.querySelector(".main-nav");
 var userNav = document.querySelector(".user-nav");
 var popup = document.querySelector("modal");
 
-mainHeaderTop.classList.remove("no-js");
+// mainHeaderTop.classList.remove("no-js");
 
 hamburger.addEventListener("click", function(event) {
   event.preventDefault();
-//   mainHeaderTop.classList.add("no-js");  
+//   mainHeaderTop.classList.toggle("no-js"); 
   hamburger.classList.toggle("main-header__toggle--closed");
   mainNav.classList.toggle("main-nav--closed");
   userNav.classList.toggle("user-nav--closed");

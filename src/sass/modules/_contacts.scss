@@ -1,6 +1,8 @@
 .contacts {
+  // positioning
   position: relative;
 
+  // box model
   display: flex;
   flex-direction: column;
   margin-bottom: 39px;
@@ -9,14 +11,17 @@
   font-size: 0;
 
   @include atTabletsPortrait {
+    // box model
     margin-bottom: 57px;
     padding-top: 66px;
   }
 
   @include atDesktop {
+    // box model
     flex-wrap: wrap;
     align-content: space-between;
     height: 457px;
+    margin-top: 150px;
     margin-bottom: 105px;
     padding-top: 30px;
     padding: 10px;
@@ -25,31 +30,39 @@
 
 
     &:before {
+      // positioning
       top: -12px;
 
+      // box model
       display: none;
       height: 23px;
 
+      // visual
       background-size: 1150px 23px;
     }
   }
 }
 
 .contacts__container {
+   // positioning
   position: relative;
-  // padding:  0 30px;
+
+  // box model
   padding-left: 30px;
 
 
   @include atTabletsPortrait {
     @include container;
+    // box model
     padding: 0;
+
+    // typography
     font-size: 43px;
     line-height: 50px;
   }
 
   @include atDesktop {
-    //width: auto;
+    // box model
     width: 525px;
     margin: 0;
   }
@@ -58,14 +71,18 @@
 .contacts__container {
   @include atTabletsPortrait {
     &::before {
+
+      // positioning
       content: "";
       position: absolute;
       top: -15px;
       right: 3px;
 
+      // box model
       width: 47px;
       height: 82px;
 
+      // visual
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
@@ -73,6 +90,7 @@
 
   @include atDesktop {
     &:before {
+      // positioning
       top: 62px;
       left: 64px;
     }
@@ -80,25 +98,33 @@
 }
 
 .contacts__title {
+  // box model
   margin: 0;
   margin-bottom: 26px;
 
+  // typography
   font-size: 1.6rem;
   font-family: 'Verdana Bold',sans-serif;
   line-height: 30px;
+
+  // visual
   color: $color-text-title;
 
   @include atTabletsPortrait {
+    // box model
     margin-bottom: 49px;
-
+    
+    // typography
     font-size: 43px;
     line-height: 50px;
   }
 
   @include atDesktop {
+    // box model
     margin-bottom: 50px;
     padding-left: 175px;
 
+    // typography
     font-size: 53px;
     line-height: 57px;
 
@@ -107,16 +133,19 @@
 }
 
 .contacts__items {
+  // box model
   display: flex;
   flex-direction: column;
 
   @include atTabletsPortrait {
+    // box model 
     flex-direction: row;
   }
 
   @include atDesktop {
-    flex-direction: column;
+    // box model
     width: 300px;
+    flex-direction: column;
     margin-right: 0;
     padding-top: 70px;
     padding-left: 175px;

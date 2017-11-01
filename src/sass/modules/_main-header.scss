@@ -76,8 +76,10 @@
 
   background-color: #ffffff;
   background-image: url("../img/icon-menu-close.svg");
+  background-position: -100%;
   background-repeat: no-repeat;
   border: 0;
+  outline: none;
 
   &--opened {
     background-image: url("../img/icon-menu-open.svg");
@@ -88,9 +90,7 @@
   }
 }
 
-.no-js .main-header__toggle {
-display: none;
-}
+
 .main-header__toggle--closed {
   background-image: url("../img/icon-menu-close.svg");
 }
